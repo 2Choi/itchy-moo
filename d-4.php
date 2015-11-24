@@ -18,7 +18,6 @@
 	}
 	.reply-top {
 		display: inline-block;
-		
 	}
 	</style>
 </head>

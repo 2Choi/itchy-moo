@@ -10,7 +10,6 @@
 		width: 100%;
 		height: 100%;
 	}
-	
 	#logo {
 		text-align: center;
 	}
