@@ -21,16 +21,16 @@ body {
 	transform: translateY(-50%);
 }
 #idvar input {
-	background-color: rgba(50, 50, 50, 0.1); 
+	background-color: rgba(50, 50, 50, 0.1);
 }
 /* 아이디 두개를 같이 적용시키려는데
 ex) #idvar #pwvar input{} 한줄로 하려는데 왜 적용이 안될까요?^^
 서브밋의 스타일을 단독으로 주고 싶어서 다시 바만 스타일 적용 시켰습니다아~*/
 #pwvar input {
-	background-color: rgba(50, 50, 50, 0.1); 
+	background-color: rgba(50, 50, 50, 0.1);
 }
 #submit {
-	
+
 }
 #black {
 	width: 100%;
@@ -39,4 +39,14 @@ ex) #idvar #pwvar input{} 한줄로 하려는데 왜 적용이 안될까요?^^
 	height:100%;
 	text-align: center;
 	background-color: black;
+}
+.margin {
+	margin: 10px 0;
+}
+input {
+	height: 30px;
+	border: 1px #eee solid;
+	border-radius: 2px;
+	text-align: center;
+	color: white;
 }

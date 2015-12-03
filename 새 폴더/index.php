@@ -18,10 +18,10 @@
 	<div id="login">
 		<div id="black"></div>
 		<form action="./index.php" method="post">
-			<div id="id">ID</div>
-			<div id="idvar"><input type="text" name="login-id" placeholder="아이디를 입력하시오"></div>
-			<div id="pw">PW</div>
-			<div id="pwvar"><input type="password" name="password" placeholder="비밀번호를 입력하시오"></div>
+			<div class="margin" id="id">ID</div>
+			<div class="margin" id="idvar"><input type="text" name="login-id" placeholder="아이디를 입력하시오" autofocus="true"></div>
+			<div class="margin" id="pw">PW</div>
+			<div class="margin" id="pwvar"><input type="password" name="password" placeholder="비밀번호를 입력하시오"></div>
 			<?
 
 			$servername = "localhost";
