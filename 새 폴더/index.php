@@ -49,7 +49,7 @@
 			<input type="submit" value="로그인" id="submit">
 
 		</form>
-		<a href="./member.php">회원가입</a>
 	</div>
+	<a href="./member.php">회원가입</a>
 </body>
 </html>
