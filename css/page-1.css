@@ -19,6 +19,14 @@ section.first
 {
 	margin-top:50px;
 }
+h1
+{
+	font-size: 2em;
+}
+body
+{
+	margin:0;
+}
 .container
 {
 	margin: 0 auto;
@@ -67,16 +75,6 @@ section
 section.last
 {
 	margin-bottom: 40px;
-}
-.cont-1
-{
-	display: inline-block;
-	float: left;
-}
-.cont-2
-{
-	display: inline-block;
-	float: right;
 }
 #top-m1
 {
