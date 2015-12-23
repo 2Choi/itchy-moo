@@ -1,3 +1,4 @@
+<?php require('config/config.php'); ?>
 <!DOCTYPE html>
 <html lang="ko-kr">
 <head>
@@ -19,17 +20,12 @@
 				<td>날짜</td>
 			</tr>
 			<?php
-			$servername = "localhost";
-			$username = "root";
-			$password = "apmsetup";
-			$dbname = "mainboard";
-
-			$conn = new mysqli ($servername, $username, $password, $dbname);
 
 			$sql = "SELECT * FROM mainboard;";
 			$result = $conn->query($sql);
 
 			while($row = $result->fetch_assoc()) {
+
 				echo "<tr>";
 				echo "<td>".$row["PostNum"]."</td>";
 				echo "<td>".$row["Author"]."</td>";

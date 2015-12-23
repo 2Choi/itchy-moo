@@ -1,3 +1,4 @@
+<?php require('config/config.php'); ?>
 <!DOCTYPE html>
 <html lang="ko-kr">
 <head>
@@ -24,13 +25,6 @@
 </head>
 <body>
 	<?php
-	$servername = "localhost";
-	$username = "root";
-	$password = "apmsetup";
-	$dbname = "mainboard";
-
-
-	$conn = new mysqli ($servername, $username, $password, $dbname);
 
 	$sql="SELECT * FROM mainboard WHERE PostNum=".$_GET["id"].";";
 

@@ -1,3 +1,4 @@
+<?php require('config/config.php'); ?>
 <!DOCTYPE html>
 <html lang="ko-kr">
 <head>
@@ -18,10 +19,6 @@
 			제목
 			<input type="text" name="title">
 		</div>
-		<div class="top">
-			날짜
-			<input type="text" name="date">
-		</div>
 		<div>
 			<p>내용</p>
 			<textarea rows="20" cols="150" name="content"></textarea>
@@ -32,16 +29,14 @@
 
 	if(!empty($_POST["submit"])) {
 
-		$servername = "localhost";
-		$username = "root";
-		$password = "apmsetup";
-		$dbname = "mainboard";
+		$_POST = array_map( 'stripslashes', $_POST );
 
-
-		$conn = new mysqli ($servername, $username, $password, $dbname);
+		//collect form data
+		extract($_POST);
 
 		$sql = "INSERT INTO mainboard (author, title, date, content)
-		VALUES ('".$_POST["author"]."','".$_POST["title"]."','".$_POST["date"]."','".$_POST["content"]."');";
+		VALUES ('".$author."','".$title."','".date('Y-m-d H:i:s')."','".$content."');";
+
 		$result = $conn->query($sql);
 
 		echo "
@@ -51,6 +46,7 @@
 		</script>
 		";
 	}
+	$conn->close();
 	?>
 
 </body>
